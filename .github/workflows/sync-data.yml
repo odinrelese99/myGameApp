@@ -14,21 +14,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Fetch JSON files
-        run: |
-          SOURCE="https://raw.githubusercontent.com/LightnigFast/Project-Lightning/main"
-          curl -sL "$SOURCE/data.json" -o data.json
-          curl -sL "$SOURCE/data-fix.json" -o data-fix.json
-          curl -sL "$SOURCE/latest-version.txt" -o latest-version.txt
+      - name: Fetch data.json
+        run: curl -sL "https://raw.githubusercontent.com/LightnigFast/Project-Lightning/main/data.json" -o data.json
 
-      - name: Validate JSON
+      - name: Fetch data-fix.json
+        run: curl -sL "https://raw.githubusercontent.com/LightnigFast/Project-Lightning/main/data-fix.json" -o data-fix.json
+
+      - name: Fetch latest-version.txt
+        run: curl -sL "https://raw.githubusercontent.com/LightnigFast/Project-Lightning/main/latest-version.txt" -o latest-version.txt
+
+      - name: Check files exist
         run: |
-          for f in data.json data-fix.json; do
-            if ! jq empty "$f" 2>/dev/null; then
-              echo "Invalid JSON: $f - removing"
-              rm -f "$f"
-            fi
-          done
+          ls -la data.json
+          ls -la data-fix.json
+          ls -la latest-version.txt
 
       - name: Commit and push
         run: |
@@ -36,7 +35,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
           if git diff --staged --quiet; then
-            echo "No changes"
+            echo "No changes to commit"
           else
             git commit -m "chore: sync data [skip ci]"
             git push
