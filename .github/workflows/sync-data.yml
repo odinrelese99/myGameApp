@@ -19,12 +19,11 @@ jobs:
           SOURCE="https://raw.githubusercontent.com/LightnigFast/Project-Lightning/main"
           curl -sL "$SOURCE/data.json" -o data.json
           curl -sL "$SOURCE/data-fix.json" -o data-fix.json
-          curl -sL "$SOURCE/shop.json" -o shop.json
           curl -sL "$SOURCE/latest-version.txt" -o latest-version.txt
 
       - name: Validate JSON
         run: |
-          for f in data.json data-fix.json shop.json; do
+          for f in data.json data-fix.json; do
             if ! jq empty "$f" 2>/dev/null; then
               echo "Invalid JSON: $f - removing"
               rm -f "$f"
