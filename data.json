@@ -248,17 +248,7 @@
       "comentarios": "Enjoy the game ♥",
       "programas_necesarios": ["DirectX 12", "Ubisoft Play", "VC C++ 2022"],
       "errores": [
-        "If the game shows errors when opening, you need to install DirectX, Ubisoft Play and VC C++ 2022",
-        "1. Install the game using files from 'Assassin's Creed Shadows - GET HERE'. If already installed, update via this app.",
-        "2. Open Project Lightning, select Assassin's Creed Shadows, and apply the fix to the game folder.",
-        "3. Run FC25.exe to generate the Denuvo ticket.",
-        "4. Send 'Token_req' file via tokens zone in the server (short message first).",
-        "5. Download that txt and paste in the game folder, thats all.",
-        "6. SGo to steam, and launch the game, the game should launch successfully.",
-        "Game requires my manifest version to work.",
-        "Support only via AnyDesk.",
-        "Disable Windows/driver updates to avoid issues.",
-        "If updated, send a new Token_req and repeat steps."
+        "If the game shows errors when opening, you need to install DirectX, Ubisoft Play and VC C++ 2022"
       ],
       "nombre_fix": "Assassin's Creed Shadows - bypass",
       "custom_images": {}
@@ -274,6 +264,21 @@
       ],
       "nombre_fix": "Far Cry 3 - bypass",
       "custom_images": {}
+    },
+	"233270": {
+      "name": "Far Cry® 3 Blood Dragon",
+      "launch_steam": true,
+      "launch_exe": true,
+      "comentarios": "Enjoy the game ♥",
+      "programas_necesarios": ["DirectX", "Ubisoft Play", "Visual C++ 2008", "Visual C++ 2010", ".NET 4.0"],
+      "errores": [
+        "If the game shows errors when opening, you need to install DirectX, Ubisoft Play, Visual C++ 2008, Visual C++ 2010 and .NET 4.0."
+      ],
+      "nombre_fix": "Far Cry® 3 Blood Dragon - bypass",
+      "custom_images": {
+        "hero_image": "https://cdn2.steamgriddb.com/grid/84aaa84129e365590aeb86b57697edb9.png",
+        "background": "https://cdn2.steamgriddb.com/hero/18b16aa4f6882ecd819ad38f21394925.jpg"
+      }
     },
     "298110": {
       "name": "Far Cry 4",
@@ -383,12 +388,14 @@
     },
     "243470": {
       "name": "Watch_Dogs",
-      "launch_steam": true,
+      "launch_steam": false,
       "launch_exe": true,
       "comentarios": "Enjoy the game ♥",
       "programas_necesarios": ["DirectX", "Ubisoft Play", ".NET 4.0"],
       "errores": [
-        "If the game shows errors when opening, you need to install DirectX, .NET 4.0 and Ubisoft Play."
+        "If the game shows errors when opening, you need to install DirectX, .NET 4.0 and Ubisoft Play.",
+		"Remember to launch the game with exe watch_dogs.exe inside the bin folder",
+		"Remember to mark the game folder as an exception before applying the fix"
       ],
       "nombre_fix": "Watch_Dogs - bypass",
       "custom_images": {
@@ -398,12 +405,13 @@
     },
     "447040": {
       "name": "Watch_Dogs 2",
-      "launch_steam": true,
+      "launch_steam": false,
       "launch_exe": true,
       "comentarios": "Enjoy the game ♥",
       "programas_necesarios": ["DirectX", "Ubisoft Play", ".NET 4.0"],
       "errores": [
-        "If the game shows errors when opening, you need to install DirectX, .NET 4.0 and Ubisoft Play."
+        "If the game shows errors when opening, you need to install DirectX, .NET 4.0 and Ubisoft Play.",
+		"Remember to launch the game with exe WatchDogs2.exe inside the bin folder"
       ],
       "nombre_fix": "Watch_Dogs 2 - bypass",
       "custom_images": {}
@@ -451,6 +459,25 @@
     }
   },
   "EA": {
+	"4032350": {
+      "name": "EA SPORTS™ College Football 27",
+      "launch_steam": false,
+      "launch_exe": true,
+      "comentarios": "Enjoy the game ♥",
+      "programas_necesarios": ["DirectX", "EA App", "VC Redist"],
+      "errores": [
+        "If the game shows errors when opening, you need to install DirectX, EA App and VC Redist",
+		"You need to launch the game with the exe called CollegeFB27.exe"
+      ],
+      "nombre_fix": "EA SPORTS™ College Football 27 - bypass",
+      "custom_images": {
+	  	"hero_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4032350/0d18c22e927cc6fe246d6a0412c87096ff33c00a/library_capsule.jpg",
+        "background": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4032350/d7f665add8823c65c31620619fa50b91dbc07e28/library_hero_2x.jpg",
+		"cover_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4032350/0d18c22e927cc6fe246d6a0412c87096ff33c00a/library_capsule.jpg",
+		"hero_image_x2": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4032350/d7f665add8823c65c31620619fa50b91dbc07e28/library_hero_2x.jpg?t=1784128711",
+		"logo_img": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4032350/58f40804b0aa54fbd62312128ba21a92a8c905ad/logo_2x.png"
+	  }
+    },
     "3405690": {
       "name": "EA SPORTS FC 26",
       "launch_steam": false,
@@ -1084,6 +1111,18 @@
     }
   },
   "DENUVO": {
+	"668580": {
+      "name": "Atomic Heart",
+      "launch_steam": true,
+      "launch_exe": true,
+      "comentarios": "Enjoy the game ♥",
+      "programas_necesarios": [".NET 4.6.2", "Microsoft VC redistributable 2022", "DirectX"],
+      "errores": [
+        "If the game shows errors when opening, you need to install .NET 4.6.2, Microsoft VC redistributable 2022 and DirectX."
+      ],
+      "nombre_fix": "Atomic Heart - bypass",
+      "custom_images": {}
+    },
 	"3768760": {
       "name": "007 First Light",
       "launch_steam": true,
@@ -1627,6 +1666,7 @@
     },
 	"3595230": {
       "name": "Call of Duty®: Modern Warfare® II",
+	  "disponible": false,
       "launch_steam": false,
       "launch_exe": true,
       "comentarios": "Enjoy the game ♥",
