@@ -1111,6 +1111,18 @@
     }
   },
   "DENUVO": {
+	"2680010": {
+      "name": "The First Berserker: Khazan",
+      "launch_steam": true,
+      "launch_exe": true,
+      "comentarios": "Enjoy the game ♥",
+      "programas_necesarios": [".NET 4.6.2", "Microsoft VC redistributable 2022", "DirectX"],
+      "errores": [
+        "If the game shows errors when opening, you need to install .NET 4.6.2, Microsoft VC redistributable 2022 and DirectX."
+      ],
+      "nombre_fix": "The First Berserker: Khazan - bypass",
+      "custom_images": {}
+    },
 	"668580": {
       "name": "Atomic Heart",
       "launch_steam": true,
